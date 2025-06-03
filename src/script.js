@@ -22,10 +22,12 @@ toggles.forEach((toggle) => {
 
 // show mobile menu
 menuBtn.addEventListener("click", () => {
+  mobileMenu.classList.remove("hidden");
   mobileMenu.classList.remove("translate-x-60");
 });
 
 // hide mobile menu
 menuClose.addEventListener("click", () => {
   mobileMenu.classList.add("translate-x-60");
+  mobileMenu.classList.add("hidden");
 });
